@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $db = new Database();
 
     $db->query("INSERT INTO `enquetereparatie` (`id`,
+                                       `naam`,
                                        `info`,
                                        `medewerker`,
                                        `software`,
@@ -17,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                        `ervaring`,
                                        `tips`)
                 VALUES                 (:id,
+                                        :naam,
                                         :info,
                                         :medewerker,
                                         :software,
@@ -26,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                         :tips)");
 
     $db->bind(':id', NULL, PDO::PARAM_INT);
+    $db->bind(':naam', $_POST['naam'], PDO::PARAM_STR);
     $db->bind(':info', $_POST['info'], PDO::PARAM_STR);
     $db->bind(':medewerker', $_POST['medewerker'], PDO::PARAM_STR);
     $db->bind(':software', $_POST['software'], PDO::PARAM_INT);

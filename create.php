@@ -49,6 +49,11 @@
             <form action="./create_script.php" method="post">
             <table>
         <tr>
+            <td><label for="naam">Voer uw naam in:
+            </label></td>
+            <td><input type="text" name="naam" id="naam"></td>
+        </tr>
+        <tr>
             <td><label for="info">Voldoet de open dag en de informatie die je 
                 hebt ontvangen aan jouw verwachting?: 
             </label></td>
@@ -66,7 +71,9 @@
             <td><label for="gesprek">
                 Wat vond je van gesprek met studenten: 
             </label></td>
-            <td><input type="text" name="gesprek" id="gesprek"></td>
+            <td>G<input type="radio" value="G" name="gesprek" id="gesprek"></td>
+            <td>V<input type="radio" value="V" name="gesprek" id="gesprek"></td>
+            <td>O<input type="radio" value="O" name="gesprek" id="gesprek"></td>
         </tr>
         <tr>
             <td><label for="ervaring">
@@ -78,7 +85,7 @@
             <td><label for="tips">
                 Heb je voor ons nog tips of zijn er vragen waar je geen antwoord op hebt gekregen?:
             </label></td>
-            <td><input type="text" name="tips" id="tips"></td>
+            <td><input type="text" name="tips" id="tips" rows="5" cols="40"></td>
         </tr>
         <tr>
             <td><label for="submit"></label></td>

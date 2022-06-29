@@ -5,7 +5,7 @@ require('./classes/database.php');
 
 $db = new Database();
 
-$db->query("SELECT id, info, medewerker, software, allround, gesprek, ervaring, tips FROM enquetereparatie ORDER BY id DESC");
+$db->query("SELECT id, naam, info, medewerker, software, allround, gesprek, ervaring, tips FROM enquetereparatie ORDER BY id DESC");
 
 $enquetereparatie = $db->selectAll();
 
@@ -13,6 +13,8 @@ $tbody = "";
 foreach($enquetereparatie as $key => $value)
 {
     $tbody .= "<tr>
+                    <td>" . $value->id . "</td>
+                    <td>" . $value->naam . "</td>
                     <td>" . $value->info . "</td>
                     <td>" . $value->medewerker . "</td>
                     <td>" . $value->software . "</td>
@@ -93,7 +95,8 @@ foreach($enquetereparatie as $key => $value)
 <table class="table">
   <thead class="thead-light">
     <tr>
-
+      <th scope="col">id</th>
+      <th scope="col">naam</th>
       <th scope="col">info</th>
       <th scope="col">medewerker</th>
       <th scope="col">software</th>
