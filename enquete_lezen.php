@@ -69,13 +69,31 @@ foreach($enquetereparatie as $key => $value)
           </nav>
         </header>
 
+<main class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h2 class="display-4">Bedankt voor de recensie</h2>
+          <p class="lead">Wij nemen alles serieus.</p>
+          <br></br>
+          <p class="lead">Hieronder kunt u alle recensies lezen!</p>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+   <div class="row">
+     </div class="col-12">
+      <a href="create.php" type="button" class="btn btn-dark btn-lg btn-block">Klik hier voor het maken van een nieuwe Enquete</a>
+     </div>
+   </div>
+  <div class="row">
+  </div class="col-12">
 
-<h1>Dit zijn onze reviews!</h1>
-<a href="./create.php">review aanmaken</a>
 <table class="table">
   <thead class="thead-light">
     <tr>
-      <th scope="col">#</th>
+
       <th scope="col">info</th>
       <th scope="col">medewerker</th>
       <th scope="col">software</th>
@@ -83,35 +101,23 @@ foreach($enquetereparatie as $key => $value)
       <th scope="col">gesprek</th>
       <th scope="col">ervaring</th>
       <th scope="col">tips</th>
+
+      <th scope="col"></th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+  <?php
+      echo $tbody;
+      ?>
   </tbody>
 </table>
 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+  </div>
+  </div>
+  </div>
+</main>
+
             <br></br>
 
 
