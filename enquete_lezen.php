@@ -51,7 +51,7 @@ foreach($enquetereparatie as $key => $value)
         </button>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="./index.html">Home <span class="sr-only"></span></a>
                 </li>
@@ -59,7 +59,7 @@ foreach($enquetereparatie as $key => $value)
                     <a class="nav-link" href="./info.html">Onze Opleidingen</a>
                 </li>
 
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav">
                   <li class="nav-item">
                       <a class="nav-link" href="./create.php">Enquete</a>
                   </li>

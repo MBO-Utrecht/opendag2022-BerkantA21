@@ -87,7 +87,7 @@ header nav ul > li > ul > li > a {
 
   /* footer */
 .footerr {
-  padding:200px 100px;
+  padding:120px 100px 100px 100px;
   color:#f0f9ff;
   background-color: black;
   bottom: 0;
