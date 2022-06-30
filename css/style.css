@@ -180,7 +180,7 @@ header nav ul > li > ul > li > a {
   opacity:0.9;
 }
   
-  .footerr .copyright {
+.footerr .copyright {
   text-align: center;
   color: white;
   padding-top: 24px;
@@ -189,3 +189,19 @@ header nav ul > li > ul > li > a {
   margin-bottom: 0;
 }
 /* einde footer */
+
+/* begin form */
+
+form {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc; 
+}
+
+label {
+  margin: 0 1rem 0 0.5rem;
+}
+
+
+/* einde form */

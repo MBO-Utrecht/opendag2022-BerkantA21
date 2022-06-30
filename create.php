@@ -58,78 +58,93 @@
     </div>
 
     
+    
+    <form action="./create_script.php" method="post">
     <h4>U kunt kiezen uit: Onvoldoende - Voldoende - Goed</h4>
     <div class="row">
-    <div class="col-6">
-    <form action="./create_script.php" method="post">
+    <div class="col-6 m-">
         <div class="form-group">
             <tr>
-            <label for="naam">Naam:  </label>
+            <label for="naam"><strong>Naam:  </strong></label>
             <input type="text" class="form-control" name="naam" placeholder="Voer uw naam in" id="naam">
             </tr>
         <div class="row">
-        </div class="col-6">
+        </div>
     <br>
         <div class="form-group">
         <tr>
-            <td><label for="info">Voldoet de open dag en de informatie die je 
-                hebt ontvangen aan jouw verwachting?: </label></td>
+            <td><label for="info"><strong>Voldoet de open dag en de informatie die je 
+                hebt ontvangen aan jouw verwachting?: </strong></label></td>
+            <div class="col">
             <td><input type="radio" value="O" name="info" id="info1"><label for="info1">Onvoldoende</label></td>
             <td><input type="radio" value="V" name="info" id="info2"><label for="info2">Voldoende</label></td>
             <td><input type="radio" value="G" name="info" id="info3"><label for="info3">Goed</label></td>
+            </div>
         </tr>
         </div>
         <tr>
-            <td><label>
-                Wat vond je van vakinhoudelijke voorlichting?: 
-            </label></td>
+            <td><label><strong>
+                Wat vond je van vakinhoudelijke voorlichting?
+            </strong></label></td>
         </tr>
         <div class="form-group">
         <tr>
-            <td><label for="medewerker">Medewerker ICT: </label></td>
+            <td><label for="medewerker"><strong>Medewerker ICT: </strong></label></td>
+            <div class="col">
             <td><input type="radio" value="O" name="medewerker" id="medewerker1"><label for="medewerker1">Onvoldoende</label></td>
             <td><input type="radio" value="V" name="medewerker" id="medewerker2"><label for="medewerker2">Voldoende</label></td>
             <td><input type="radio" value="G" name="medewerker" id="medewerker3"><label for="medewerker3">Goed</label></td>
+            </div>
         </tr>
         </div>
         <div class="form-group">
         <tr>
-            <td><label for="software">Software Developer: </label></td>
+            <td><label for="software"><strong>Software Developer: </strong></label></td>
+            <div class="col">
             <td><input type="radio" value="O" name="software" id="software1"><label for="software1">Onvoldoende</label></td>
             <td><input type="radio" value="V" name="software" id="software2"><label for="software2">Voldoende</label></td>
             <td><input type="radio" value="G" name="software" id="software3"><label for="software3">Goed</label></td>
+            </div>
         </tr>
         </div>
         <div class="form-group">
         <tr>
-            <td><label for="allround">Allround medewerker: </label></td>
+            <td><label for="allround"><strong>Allround medewerker: </strong></label></td>
+            <div class="col">
             <td><input type="radio" value="O" name="allround" id="allround1"><label for="allround1">Onvoldoende</label></td>
             <td><input type="radio" value="V" name="allround" id="allround2"><label for="allround2">Voldoende</label></td>
             <td><input type="radio" value="G" name="allround" id="allround3"><label for="allround3">Goed</label></td>
+            </div>
         </tr>
         </div>
         <div class="form-group">
         <tr>
-            <td><label for="gesprek">Wat vond je van gesprek met studenten: </label></td>
+            <td><label for="gesprek"><strong>Wat vond je van gesprek met studenten: </strong></label></td>
+            <div class="col">
             <td><input type="radio" value="O" name="gesprek" id="gesprek1"><label for="gesprek1">Onvoldoende</label></td>
             <td><input type="radio" value="V" name="gesprek" id="gesprek2"><label for="gesprek2">Voldoende</label></td>
             <td><input type="radio" value="G" name="gesprek" id="gesprek3"><label for="gesprek3">Goed</label></td>
+            </div>
         </tr>
         </div>
         <div class="form-group">
         <tr>
-            <td><label for="ervaring">Heb je de schoolsfeer als positief ervaren?: </label></td>
+            <td><label for="ervaring"><strong>Heb je de schoolsfeer als positief ervaren?: </strong></label></td>
+            <div class="col">
             <td><input type="radio" value="O" name="ervaring" id="ervaring1"><label for="ervaring1">Onvoldoende</label></td>
             <td><input type="radio" value="V" name="ervaring" id="ervaring2"><label for="ervaring2">Voldoende</label></td>
             <td><input type="radio" value="G" name="ervaring" id="ervaring3"><label for="ervaring3">Goed</label></td>
+            </div>
         </tr>
         </div>
        <div class="form-group">
         <tr>
-            <td><label for="tips">
+            <td><label for="tips"><strong>
                 Heb je voor ons nog tips of zijn er vragen waar je geen antwoord op hebt gekregen?:
-            </label></td>
+            </strong></label></td>
+            <div class="col">
             <td><input type="textarea" class="form-control" name="tips" id="tips" placeholder="Invoer Comment" aria-describedby="CommentHelp"></td>
+            </div>
         </tr>
        </div>
         <tr>
