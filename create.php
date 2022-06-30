@@ -28,7 +28,7 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./info.html">Info Opendag</a>
+                    <a class="nav-link" href="./info.html">Onze Opleidingen</a>
                 </li>
 
                 <ul class="navbar-nav ml-auto">
@@ -42,63 +42,107 @@
               </div>
           </nav>
         </header>
+
     <br></br>
 
-    <div class="enqueteinvullen">
-        <h1>Voeg een nieuwe enquete toe!</h1>
-            <form action="./create_script.php" method="post">
-            <table>
-        <tr>
-            <td><label for="naam">Voer uw naam in:
-            </label></td>
-            <td><input type="text" name="naam" id="naam"></td>
-        </tr>
+<main class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h2 class="display-4">Dit is onze Enquete pagina</h2>
+                     <p class="lead">Hieronder kunt u een nieuwe enquete  toevoegen!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <h4>U kunt kiezen uit: O=Onvoldoende - V=Voldoende - G=Goed - N=Niet van toepassing</h4>
+    <div class="row">
+    <div class="col-6">
+    <form action="./create_script.php" method="post">
+        <div class="form-group">
+            <tr>
+            <label for="naam">Naam:  </label>
+            <input type="text" class="form-control" name="naam" placeholder="Voer uw naam in" id="naam">
+            </tr>
+        <div class="row">
+        </div class="col-6">
+
+    <br>
+
+        <div class="form-group">
         <tr>
             <td><label for="info">Voldoet de open dag en de informatie die je 
-                hebt ontvangen aan jouw verwachting?: 
-            </label></td>
-            <td><input type="text" name="info" id="info"></td>
+                hebt ontvangen aan jouw verwachting?: </label></td>
+            <td><input type="radio" value="O" name="info" id="info">O</td>
+            <td><input type="radio" value="V" name="info" id="info">V</td>
+            <td><input type="radio" value="G" name="info" id="info">G</td>
         </tr>
+        </div>
         <tr>
-            <td><label for="medewerker, software, allround">
+            <td><label>
                 Wat vond je van vakinhoudelijke voorlichting?: 
             </label></td>
-            <td><input type="text" name="medewerker" id="medewerker"></td>
-            <td><input type="number" name="software" id="software"></td>
-            <td><input type="text" name="allround" id="allround"></td>
+        </tr>
+
+        <tr>
+            <td><label for="medewerker">Medewerker ICT: </label></td>
+            <td><input type="radio" value="O" name="medewerker" id="medewerker">O</td>
+            <td><input type="radio" value="V" name="medewerker" id="medewerker">V</td>
+            <td><input type="radio" value="G" name="medewerker" id="medewerker">G</td>
+            <td><input type="radio" value="N" name="medewerker" id="medewerker">N</td>
         </tr>
         <tr>
-            <td><label for="gesprek">
-                Wat vond je van gesprek met studenten: 
-            </label></td>
-            <td>G<input type="radio" value="G" name="gesprek" id="gesprek"></td>
-            <td>V<input type="radio" value="V" name="gesprek" id="gesprek"></td>
-            <td>O<input type="radio" value="O" name="gesprek" id="gesprek"></td>
+            <td><label for="software">Software Developer: </label></td>
+            <td><input type="radio" value="O" name="software" id="software">O</td>
+            <td><input type="radio" value="V" name="software" id="software">V</td>
+            <td><input type="radio" value="G" name="software" id="software">G</td>
+            <td><input type="radio" value="N" name="software" id="software">N</td>
         </tr>
         <tr>
-            <td><label for="ervaring">
-                Heb je de schoolsfeer als positief ervaren?: 
-            </label></td>
-            <td><input type="text" name="ervaring" id="ervaring"></td>
+            <td><label for="allround">Allround medewerker: </label></td>
+            <td><input type="radio" value="O" name="allround" id="allround">O</td>
+            <td><input type="radio" value="V" name="allround" id="allround">V</td>
+            <td><input type="radio" value="G" name="allround" id="allround">G</td>
+            <td><input type="radio" value="N" name="allround" id="allround">N</td>
+        </tr><br>
+        
+        <tr>
+            <td><label for="gesprek">Wat vond je van gesprek met studenten: </label></td>
+            <td><input type="radio" value="O" name="gesprek" id="gesprek">O</td>
+            <td><input type="radio" value="V" name="gesprek" id="gesprek">V</td>
+            <td><input type="radio" value="G" name="gesprek" id="gesprek">G</td>
         </tr>
+        <tr>
+            <td><label for="ervaring">Heb je de schoolsfeer als positief ervaren?: </label></td>
+            <td><input type="radio" value="O" name="ervaring" id="ervaring">O</td>
+            <td><input type="radio" value="V" name="ervaring" id="ervaring">V</td>
+            <td><input type="radio" value="G" name="ervaring" id="ervaring">G</td>
+        </tr>
+       <div class="form-group">
         <tr>
             <td><label for="tips">
                 Heb je voor ons nog tips of zijn er vragen waar je geen antwoord op hebt gekregen?:
             </label></td>
-            <td><input type="text" name="tips" id="tips" rows="5" cols="40"></td>
+            <td><input type="textarea" class="form-control" name="tips" id="tips" placeholder="Invoer Comment" aria-describedby="CommentHelp"></td>
         </tr>
+       </div>
         <tr>
             <td><label for="submit"></label></td>
             <td><input type="submit" name="submit" id="submit"></td>
         </tr>
-            </table>
-            </form>
+        
+    </form>
+
     </div>
-    dropdown of dropoff
-    radiobuttons beste
+    </div class="col-6">
+    </div>
+</main>
 
     <br></br>
-    
+
     <div class="footerr">
         <footer>
             <div class="container">
