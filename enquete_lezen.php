@@ -58,7 +58,9 @@ foreach($enquetereparatie as $key => $value)
                 <li class="nav-item">
                     <a class="nav-link" href="./info.html">Onze Opleidingen</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="./plattegrond.html">Plattegrond</a>
+                </li>
                 <ul class="navbar-nav">
                   <li class="nav-item">
                       <a class="nav-link" href="./create.php">Enquete</a>
@@ -92,7 +94,7 @@ foreach($enquetereparatie as $key => $value)
   <div class="row">
   </div class="col-12">
 
-<table class="table">
+<table class="table table-striped">
   <thead class="thead-light">
     <tr>
       <th scope="col">id</th>

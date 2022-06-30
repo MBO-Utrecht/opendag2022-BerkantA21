@@ -30,7 +30,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./info.html">Onze Opleidingen</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="./plattegrond.html">Plattegrond</a>
+                </li>
                 <ul class="navbar-nav">
                   <li class="nav-item">
                       <a class="nav-link" href="./create.php">Enquete</a>
