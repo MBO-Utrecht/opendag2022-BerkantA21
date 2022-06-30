@@ -97,37 +97,38 @@
     dropdown of dropoff
     radiobuttons beste
 
-
-
+    <br></br>
+    
     <div class="footerr">
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item" id="left-footer">
-                        <h3>Services</h3>
+                        <h3>Snel naar</h3>
                         <ul>
-                            <li><a href="#">Homepage</a></li>
-                            <li><a href="#">Enquete</a></li>
-                            <li><a href="#">Enquete-lezen</a></li>
-                            <li><a href="#">Meer info Opendag</a></li>
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="create.php">Enquete</a></li>
+                            <li><a href="enquete_lezen.php">Enquete-lezen</a></li>
+                            <li><a href="info.html">Meer info Opleidingen</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Over Ons</h3>
-                        <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-                            Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet
+                        <p>Reparatie Ict School is een kleinschalige, interconfessionele onderwijsinstelling die
+                           doelmatig onderwijs aanbiedt met focus op de hoogste niveaus van het mbo.
+                           We bieden met ca. 500 medewerkers ruim 50 mbo-opleidingen aan ongeveer 5.000 studenten, 
+                           in uiteenlopende de domeinen van het mbo-onderwijs.
                         </p>
                     </div>
                     <div class="col-md-6 item text">
                         <h3>Reparatie-ict-school</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. 
-                            Vivamus ac sem lacus. 
-                            Ut vehicula rhoncus elementum. 
-                            Etiam quis tristique lectus. 
-                            Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                        <p>Reparatie ict school wil jou helpen in de ontwikkeling van student tot zelfbewuste professional. 
+                          Wij geven jou meer dan een opleiding en leren je meer dan een vak. Er is veel aandacht voor de ontwikkeling van talent, 
+                          arbeidsvaardigheden, ondernemend gedrag, maatschappelijke betrokkenheid, respect voor elkaar en burgerschap. 
+                        </p>
                     </div>
                     <div class="col item social">
-                        <a href="https://www.facebook.com/"><i class="icon ion-social-facebook" img src="./img/Facebook_logo.png"></i></a>
+                        <a href="https://www.facebook.com/"><i class="icon ion-social-facebook" id="facebooks"></i></a>
                         <a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
                         <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
                     </div>
